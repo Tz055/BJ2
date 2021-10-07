@@ -27,7 +27,7 @@ client.on("ready", () => {
 
      
     client.user.setStatus('idle')
-    client.user.setActivity(`на вас, милые котики :3`, { type: "WATCHING" })
+    client.user.setActivity(`на вас, милых котиков :3`, { type: "WATCHING" })
     console.log(`${client.user.username} ready!`);
 });
 
