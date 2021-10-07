@@ -19,16 +19,18 @@ client.queue = new Map();
 const cooldowns = new Collection();
 const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
+
 /**
  * Client Events
  */
 client.on("ready", () => {
-  console.log(`${client.user.username} ready!`);
-  client.user.setPresence({
-    status: 'idle';
-  });
-   client.user.setActivity(`на вас, милые котики :3`, { type: "WATCHING" })
+
+     
+    client.user.setStatus('idle')
+    client.user.setActivity(`на вас, милые котики :3`, { type: "WATCHING" })
+    console.log(`${client.user.username} ready!`);
 });
+
 client.on("warn", (info) => console.log(info));
 client.on("error", console.error);
 
