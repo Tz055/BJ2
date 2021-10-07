@@ -27,7 +27,7 @@ client.on("ready", () => {
   client.user.setPresence({
     status: 'idle';
   });
-  client.user.setActivity(`на милых котят... By Tz055`, { type: "Watching" });
+   client.user.setActivity(`на вас, милые котики :3`, { type: "WATCHING" })
 });
 client.on("warn", (info) => console.log(info));
 client.on("error", console.error);
